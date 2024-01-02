@@ -1,5 +1,8 @@
-<?=
-ini_set('display_errors', 1);?>
+<?php
+ini_set('display_errors', 1);
+require 'inc/functions.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
