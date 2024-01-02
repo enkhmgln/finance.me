@@ -17,6 +17,6 @@ wasd
 wasd
 wasd
 END;
-echo $h;
+// echo $h;
 
 require "inc/footer.php";
