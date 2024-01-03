@@ -39,19 +39,19 @@ $students[] = 'hamgiin suulyn element - iin utga';
 /*
 Жишээ нь : $students = ['bold', 'naraa', 'saraa'];
 байгаад unset($students['naraa']); гээд massive - аа хэвлээд үзэх үед  (0)=>'bold', (1)=> 'saraa' гарна */
-def($str); # index : 0,1,2,3,4
+// def($str); # index : 0,1,2,3,4
 unset($str[1]);
-def($str); # unset ashiglasanii daraa index : 0,1,3,4
+// def($str); # unset ashiglasanii daraa index : 0,1,3,4
 
 // massive - ИЙГ ДАХИН ИНДЕХЛЭХ function
 $str = array_values($str); # $arr - ийг дахин index - лээд буцаана; .map function бүтэцээрээ адилхан.
-def($str); #array_values function - ыг ашигласаны дараа index  : 0,1,2,3
+// def($str); #array_values function - ыг ашигласаны дараа index  : 0,1,2,3
 // Массиваас эрэмблэх sort , rsort , ksort
 sort($str); # sort function  дараалалаар эрэмблэнэ
 rsort($str); # rsort function  дараалалаас эсрэгээр эрэмблэнэ
 ksort($str); #ksort function key буюу утгыг агуулж буй index - ээр эрэмблэнэ.
 krsort($str); #krsort function нь  key буюу утгыг агуулж буй index - ийн эсрэгээр эрэмблэнэ.
-def($str);
+// def($str);
 
 // Санамсаргүй байдлаар холих функц
 shuffle($str); #Math.random() function-тай төстэй
@@ -70,10 +70,10 @@ shuffle($str); #Math.random() function-тай төстэй
 
 // array splice buyu tasalj awah
 // element iig tasalj awna undsen massive aas ustgana
-// def($students);
-// $newStudents = array_splice($students, 0, 1);
-// def($newStudents);
-// def($students);
+def($students);
+$newStudents = array_splice($students, 0, 2);
+def($newStudents);
+def($students);
 
 // massive - aas haih , array_search() , in_array();
 #array_search function deer 2 argument ugdug ba ehnii argument der haih gej bga utgaa bicheed 2dah argument deer array - aa ugnu.. herweee olwol index iin butsaana olohgu bol null butsaana
