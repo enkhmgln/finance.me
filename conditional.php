@@ -1,19 +1,37 @@
 <?php
-// if нөхцөл шалгалт ба Логик оператор
 require 'inc/header.php';
 
-$temprature = 16;
+$t = 35;
+$tenger = 'цэлмэг';
 
-if ($temprature <= 0 and $temprature > -14) {
-    echo 'Сэрүүхэн байна';
-} elseif ($temprature >= 15) {
-    echo 'Халуун байна';
-} elseif ($temprature > 0 and $temprature <= 14) {
-    echo ' Дулаан байна';
-} elseif ($temprature <= -15) {
-    echo ' Хүйтэн байна';
-} else {
-    echo 'Цаг агаар олдсонгүй';
+// Логик операторууд ба if
+if ($t <= -20) {
+    echo 'Хөлдөхөөр хүйтэн байна';
+} elseif ($t < -10 && $t > -20) {
+    echo 'аймаар хүйтэн байнаа';
+} elseif ($t < 0 and $t > -10) {
+    echo 'хүйтэн байнаа';
+} elseif ($t > 0 and $t < 10) {
+    echo 'сэрүүхэн байна';
 }
 
-require 'inc/header.php';
+if ($t > 10 and $t < 20) {
+    echo 'дулаахан байна';
+} elseif ($t > 20 && $t < 30 || $tenger == 'бороотой') {
+    echo 'Гоё өдөр байна байна';
+} else {
+    echo 'шатмаар халуун байна';
+}
+
+$a = 123;
+var_dump($a);
+
+echo '<br>';
+
+if ($a === '123') {
+    echo 'тэнцүү';
+} else {
+    echo 'тэнцүү биш';
+}
+
+require 'inc/footer.php';

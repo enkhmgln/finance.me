@@ -1,7 +1,7 @@
 <?php
-function def(array $arr)
+function def($array)
 {
     echo '<pre>';
-    print_r($arr);
+    print_r($array);
     echo '</pre>';
 }
